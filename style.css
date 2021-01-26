@@ -1,0 +1,181 @@
+/* :default css */
+
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/*  common css */
+
+.container {
+	
+	width: 70%;
+	margin: auto;
+}
+
+/* header part css */
+.header-part {
+	background: black;
+}
+.header-part ul {
+	text-align: center;
+}
+.header-part ul li {
+	display: inline-block;
+}
+.header-part ul li a {
+	color: white;
+	padding: 7px 20px;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 400;
+	position: relative;
+	z-index: 1;
+	
+
+	
+}
+.header-part ul li a::before {
+	content: "";
+	height: 100%;
+	width: 0%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .3s;
+	z-index: -1;
+	border-bottom: 2px solid rgb(236, 107, 2);
+	
+
+}
+.header-part ul li a:hover::before {
+	width: 100%;
+
+}
+.header-part h2 {
+	background-color: #DDDDDD;
+	padding: 10px 0 20px 0;
+	font-size: 22px;
+}
+
+
+
+/* content part css */
+.contents-part{
+    background-image: url(./laptop1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px 0;
+}
+
+.basic-style {
+	background-color: rgb(0, 0, 0);
+	display: inline-block;
+	margin-right: 30px;
+	padding: 20px;
+	color: white;
+	transition: .5s;
+	
+}
+.basic-style ul li {
+		padding: 0px 0 13px 0;
+}
+
+.div1 ul li::before {
+	content: '\f6af';
+	font-family: "Font Awesome 5 Brands";
+	font-size: 14px;
+	margin: 0 10px 0 0;
+}
+.div2 ul li::before {
+	content: '\f013';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	margin: 0 5px 0 0;
+	font-size: 14px;
+}
+.div2 ul li:after{
+    content: '\f013';
+    font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	margin: 0 0 0 5px;
+	font-size: 14px;
+}
+
+.div3 ul li::before {
+	content: '\f2a2';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+
+/* Hover Part */
+.basic-style:hover{
+	cursor: pointer;
+	background-color: rgb(13, 13, 230);
+	border-radius: 20px;
+	color: rgb(255, 255, 255);
+}
+.basic-style::before{
+
+}
+.div1 ul li::before {
+	content: '\f6af';
+	font-family: "Font Awesome 5 Brands";
+	font-size: 14px;
+	margin: 0 10px 0 0;
+}
+.div1:hover{
+	cursor: pointer;
+}
+/* footer part css */
+.footer-part {
+	background: black;
+	padding: 20px 0;
+	color: white;
+}
+
+.social-icons ul li a i {
+	height: 25px;
+	width: 25px;
+	background: #5EA5FA;
+	line-height: 25px;
+	border-radius: 50%;
+	display: inline-block;
+	color: black;
+	margin: 3px;
+	font-size: 12px;
+	border: 1px solid transparent;
+}
+.social-icons ul li a i:nth-child(1):hover{
+	background-color: rgb(23, 140, 236);
+	color: rgb(245, 245, 245);
+}
+.social-icons ul li a i:nth-child(2):hover{
+	background-color: rgb(12, 141, 216);
+	color: rgb(245, 245, 245);
+}
+.social-icons ul li a i:nth-child(3):hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(250, 12, 12);
+}
+.social-icons ul li a i:nth-child(4):hover{
+	background-color: rgb(1, 0, 8);
+	color: rgb(238, 238, 238);
+	border:1px solid blue ;
+}
+.social-icons ul li a i:nth-child(5):hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 27, 27);
+	
+}
+.footer-part p {
+	font-size: 14px;
+	margin: 2px 0 0 0;
+}
